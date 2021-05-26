@@ -4,16 +4,17 @@ import  urllib.request
 import numpy as np
 
 
+
 app = Flask (__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 
 def homepage():
     return render_template("homepage.html")#render m7zer lno html mbkom string..
 
 
 
-@app.route('/health')
+@app.route('/health',methods=['GET'])
 def starting_url():
     # status_code = Response(status=200)
     return render_template("health.html"),200
@@ -25,7 +26,7 @@ def starting_url():
 
 
 #the route where all the work are done
-@app.route('/stats/<IMAGE_FILE_NAME>/<FUNC_NAME>')
+@app.route('/stats/<IMAGE_FILE_NAME>/<FUNC_NAME>',methods=['GET'])
 def starting_work(IMAGE_FILE_NAME,FUNC_NAME):
     # get the picture
     url = "https://storage.googleapis.com/seetree-demo-open/{}".format(IMAGE_FILE_NAME)
