@@ -12,7 +12,7 @@ git clone https://github.com/ameenaboraya/seetree.git
 open Command Prompt and go to the file location then tap 
 ```bash
 py -m pip install -r requirements.txt
-set FLASK_APP=seetree.py
+set FLASK_APP=seetree-ameen.py
 flask run
 ```
 Go over the [localhost](https://127.0.0.0:5000) with port 5000 because flask run with that port
