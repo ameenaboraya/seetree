@@ -1,0 +1,6 @@
+Flask
+py
+Pillow
+numpy
+urllib
+requests
