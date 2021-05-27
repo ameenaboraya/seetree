@@ -32,19 +32,19 @@ Go over the [localhost](https://127.0.0.0:5000)
 
 
 ## Work
-This is the homepage , you are requested to choose a photo and a function:
+##This is the homepage , you are requested to choose a photo and a function:
 
 <img width="1438" alt="Screen Shot 2021-05-28 at 0 56 54" src="https://user-images.githubusercontent.com/82150100/119903268-26414500-bf51-11eb-9f22-cbdb28177132.png">
 
 
 
 
-/health : will respond with “OK” to any request
+##/health : will respond with “OK” to any request
 <img width="1438" alt="Screen Shot 2021-05-28 at 1 12 17" src="https://user-images.githubusercontent.com/82150100/119904915-d748df00-bf53-11eb-913b-7eb07a7737ba.png">
 
 
 
-This is the result page:
+##This is the result page:
 
 /stats/IMAGE_FILE_NAME/FUNC_NAME : will show you the  FUNC_NAME on the
 pixels of given IMAGE_FILE_NAME , We have five supported function:min, max , median , pX where 0<=X<=100
@@ -58,7 +58,7 @@ image
 <img width="1438" alt="Screen Shot 2021-05-28 at 1 10 16" src="https://user-images.githubusercontent.com/82150100/119904512-30fcd980-bf53-11eb-8ca1-865c0f9bfaa8.png">
 
 
-The server  respond with error code 404 if an image does not exist or the function is not supported
+##The server  respond with error code 404 if an image does not exist or the function is not supported
 code 404 for image:
 <img width="1438" alt="Screen Shot 2021-05-28 at 1 23 06" src="https://user-images.githubusercontent.com/82150100/119904777-918c1680-bf53-11eb-8328-4042cbe82406.png">
 
@@ -66,6 +66,6 @@ code 404 for image:
 code 404 for function
 <img width="1438" alt="Screen Shot 2021-05-28 at 1 25 45" src="https://user-images.githubusercontent.com/82150100/119904826-a8326d80-bf53-11eb-896d-ce8ae13c12f7.png">
 
-Bonus: how can we make multiple identical requests (same image and same function)
+##Bonus: how can we make multiple identical requests (same image and same function)
 more efficient ?
 We can use a dictionary ,that saves the values of all the function for each image,if its our first request to the function , the dictionary will be empty,so we add the value(image,fun) to the dictionary , in the second request ,  We don't have to wait until all the image processing,We will check the dictionary first and find the value , that will save our time.
