@@ -32,25 +32,35 @@ Go over the [localhost](https://127.0.0.0:5000)
 
 
 ## Work
+This is the homepage , you are requested to choose a photo and a function:
+
+<img width="1438" alt="Screen Shot 2021-05-28 at 0 56 54" src="https://user-images.githubusercontent.com/82150100/119903268-26414500-bf51-11eb-9f22-cbdb28177132.png">
+
+
+
 
 /health : will respond with “OK” to any request
+<img width="1438" alt="Screen Shot 2021-05-28 at 0 56 54" src="https://user-images.githubusercontent.com/82150100/119903732-cac38700-bf51-11eb-91a3-3977387c5137.png">
 
-/stats/IMAGE_FILE_NAME/FUNC_NAME : will calculate FUNC_NAME on the
-pixels of given IMAGE_FILE_NAME and return the result.
-Supported FUNC_NAMES should be:
 
-i. min
+This is the result page:
 
-ii. max
+/stats/IMAGE_FILE_NAME/FUNC_NAME : will show you the  FUNC_NAME on the
+pixels of given IMAGE_FILE_NAME , We have five supported function:min, max , median , pX where 0<=X<=100
 
-iii. mean
+We have ten images ,they are stored in a bucket named :seetree-demo-open .
+The server  respond correctly to requests on any image that exists in the bucket
 
-iv. median
 
-v. pXXX where XXX is a percentile between 0...100. For example p10 is the
-10th percentile of the image, p99 is the 99th percentile.
+Example for Request to /stats/IMG_9.jpg/min , respond with the correct min value in the
+image
+<img width="1438" alt="Screen Shot 2021-05-28 at 1 10 16" src="https://user-images.githubusercontent.com/82150100/119904512-30fcd980-bf53-11eb-8ca1-865c0f9bfaa8.png">
 
-All the images that should be supported are stored in a bucket named :
-seetree-demo-open .
-Currently there are 10 images in this bucket named IMG_1.jpg, IMG_2.jpg …
-IMG_10.jpg. 
+
+The server  respond with error code 404 if an image does not exist or the function is not supported
+code 404 for image:
+<img width="1438" alt="Screen Shot 2021-05-28 at 1 23 06" src="https://user-images.githubusercontent.com/82150100/119904777-918c1680-bf53-11eb-8328-4042cbe82406.png">
+
+
+code 404 for function
+<img width="1438" alt="Screen Shot 2021-05-28 at 1 25 45" src="https://user-images.githubusercontent.com/82150100/119904826-a8326d80-bf53-11eb-896d-ce8ae13c12f7.png">
