@@ -40,7 +40,8 @@ This is the homepage , you are requested to choose a photo and a function:
 
 
 /health : will respond with “OK” to any request
-<img width="1438" alt="Screen Shot 2021-05-28 at 0 56 54" src="https://user-images.githubusercontent.com/82150100/119903732-cac38700-bf51-11eb-91a3-3977387c5137.png">
+<img width="1438" alt="Screen Shot 2021-05-28 at 1 12 17" src="https://user-images.githubusercontent.com/82150100/119904915-d748df00-bf53-11eb-913b-7eb07a7737ba.png">
+
 
 
 This is the result page:
