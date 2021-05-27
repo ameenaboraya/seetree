@@ -67,6 +67,6 @@ image
 ## code 404 for function
 <img width="1438" alt="Screen Shot 2021-05-28 at 1 25 45" src="https://user-images.githubusercontent.com/82150100/119904826-a8326d80-bf53-11eb-896d-ce8ae13c12f7.png">
 
-## Bonus: how can we make multiple identical requests (same image and same function)
-more efficient ?
+## Bonus: how can we make multiple identical requests (same image and same function)more efficient ?
+
 We can use a dictionary ,that saves the values of all the function for each image,if its our first request to the function , the dictionary will be empty,so we add the value(image,fun) to the dictionary , in the second request ,  We don't have to wait until all the image processing,We will check the dictionary first and find the value , that will save our time.
