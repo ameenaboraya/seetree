@@ -70,3 +70,9 @@ image
 ## Bonus: how can we make multiple identical requests (same image and same function)more efficient ?
 
 We can use a dictionary ,that saves the values of all the function for each image,if its our first request to the function , the dictionary will be empty,so we add the value(image,fun) to the dictionary , in the second request ,  We don't have to wait until all the image processing,We will check the dictionary first and find the value , that will save our time.
+## example , function p24 on image
+![local-filename](https://user-images.githubusercontent.com/82150100/120049712-80123f80-c023-11eb-9871-815bd46c43ce.jpg)
+## first run , uts takes 3.993824005126953
+## second 0.06513714790344238
+## third 0.05947685241699219
+
